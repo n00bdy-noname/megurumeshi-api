@@ -1,14 +1,10 @@
+// ./src/pages/_app.tsx
+
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
+import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <div className="container mx-auto">
-      {" "}
-      {/* Tailwind CSSのコンテナークラスを追加 */}
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
